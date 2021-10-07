@@ -1,0 +1,23 @@
+header{
+    background-color: #0f3058;
+    padding: 30px 30px;
+}
+.head{
+    text-align: center;
+}
+.head a+a{
+    margin-left: 70px;
+
+}
+.home{
+    color: white;
+}
+.other{
+    color: #cbb73d;
+}
+.other:hover{
+    color: #ffffff;
+}
+a { text-decoration: none;
+}
+
