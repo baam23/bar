@@ -1,24 +1,31 @@
-header{
-    background-color: #0f3058;
+.header{
+    background-color: #041021;
     padding: 30px 30px 0px 0px;
     height:50px;
-    position: fixed;
     width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
+
 body{
     margin: 0;
 }
 .head{
     text-align:center;
+
 }
 .head a+a{
     margin-left: 70px;
 }
 .home{
     color: white;
+    font-size: 16px;
+    font-family: monospace;
 }
 .other{
-    color: #cbb73d;
+    color: #968828;
+    font-size: 16px;
+    font-family: monospace;
 }
 .other:hover{
     color: #ffffff;/*при наведении мыши цвет меняется*/
@@ -26,7 +33,7 @@ body{
 a { text-decoration: none; /*не подчеркивается ссылка*/
 }
 #head{
-    top: 150px; /*высота шапки в пикселях*/
+    top: 100px; /*высота шапки в пикселях*/
     position: fixed;
     z-index: 1000;
 }
@@ -37,4 +44,100 @@ a { text-decoration: none; /*не подчеркивается ссылка*/
     background: transparent; /*прозрачное выделение*/
 }
 
+.street{
+    background-position: center;
+}
+.img2{
+    position: absolute;
+    top: 200px;
+    left: 595px;
+    display: block;
+    height: 389px;
+    width: 387px;
 
+}
+#rectangle {
+    width: 330px;
+    height: 350px;
+    background: rgba(77, 161, 247, 0);
+    position: absolute;
+    top: 220px;
+    left: 620px;
+    border: rgba(150, 136, 40, 0.73) solid 2px;
+}
+#rectangle1 {
+    width: 350px;
+    height: 330px;
+    background: rgba(77, 161, 247, 0);
+    position: absolute;
+    top: 230px;
+    left: 610px;
+    border: rgba(150, 136, 40, 0.73) solid 2px;
+}
+.text{
+    position: absolute;
+    top:230px;
+    left: 715px;
+    font-size: 16px;
+    color: #968828;
+    z-index: 100;
+}
+.text1{
+    position: absolute;
+    top:270px;
+    left: 700px;
+    font-size: 90px;
+    color: #ffffff;
+    font-style: revert;
+    font-weight: 900;
+    font-family: monospace;
+    letter-spacing:5px;
+}
+.text2{
+    position: absolute;
+    top:350px;
+    left: 705px;
+    font-size: 85px;
+    color: #ffffff;
+    font-weight: normal;
+    font-family: monospace;
+    letter-spacing:5px;
+}
+.pod1 {
+    position: absolute;
+    top: 430px;
+    left: 690px;
+    font-size: 16px;
+    color: #968828;
+    font-family: monospace;
+}
+.pod2 {
+    position: absolute;
+    top: 455px;
+    left: 688px;
+    font-size: 16px;
+    color: #968828;
+    font-family: monospace;
+}
+.pod3 {
+    position: absolute;
+    top: 480px;
+    left: 703px;
+    font-size: 16px;
+    color: #968828;
+    font-family: monospace;
+}
+.esh{
+    background-color: #041021;
+    height: 2000px;
+    width: 1583px;
+    position: absolute;
+    top: 980px;
+}
+.about{
+    position: center;
+    color: white;
+    margin: 0px 0px 0px 701px;
+    font-family: monospace;
+    font-size: 30px;
+}

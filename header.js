@@ -1,24 +1,18 @@
-<script>
-    var h_hght = 150; // высота шапки
-    var h_mrg = 0;    // отступ когда шапка уже не видна
-    $(function(){
+$(function() {
+    let header = $('.header');
+    let hederHeight = header.height(); // вычисляем высоту шапки
 
-    var elem = $('#head');
-    var top = $(this).scrollTop();
-
-    if(top > h_hght){
-    elem.css('top', h_mrg);
-}
-
-    $(window).scroll(function(){
-    top = $(this).scrollTop();
-
-    if (top+h_mrg < h_hght) {
-    elem.css('top', (h_hght-top));
-} else {
-    elem.css('top', h_mrg);
-}
+    $(window).scroll(function() {
+        if($(this).scrollTop() > 1) {
+            header.addClass('header_fixed');
+            $('body').css({
+                'paddingTop': hederHeight+'px' // делаем отступ у body, равный высоте шапки
+            });
+        } else {
+            header.removeClass('header_fixed');
+            $('body').css({
+                'paddingTop': 0 // удаляю отступ у body, равный высоте шапки
+            })
+        }
+    });
 });
-
-});
-</script>
